@@ -106,12 +106,9 @@ class SetParser(Element, metaclass=ABCMeta):
         def repeat(items, indent=1):
             for item in items:
                 try:
-                    value = str(item.value.value)
-                    if hasattr(item, '_classification'):
-                        value = str(item._classification[item.value.value])
 
                     metadata[item.TAG] = (item.LDSName, item.ESDName,
-                                          item.UDSName, value)
+                                          item.UDSName, str(item.value.value))
                 except:
                     None
                 if hasattr(item, 'items'):
