@@ -61,8 +61,8 @@ instance/
 .scrapy
 
 # VirtualEnv stuff:
-.Python 
-[Bb]in 
+.Python
+[Bb]in
 [Ii]nclude
 [Ll]ib
 [Ll]ib64
@@ -72,6 +72,7 @@ instance/
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+Pipfile.lock
 
 # Sphinx documentation
 docs/_build/
@@ -115,3 +116,5 @@ ENV/
 /pprint_packet.py
 /pprint_stdin.py
 /pprint_metadata_values.py
+
+.vscode/

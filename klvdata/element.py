@@ -80,9 +80,3 @@ class UnknownElement(Element):
         """Return as-code string used to re-create the object."""
         args = ', '.join(map(repr, (bytes(self.key), bytes(self.value))))
         return '{}({})'.format(self.__class__.__name__, args)
-
-
-
-
-
-
